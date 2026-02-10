@@ -62,6 +62,10 @@ Devuelve el percentil p de una lista de números usando el método de rango más
 
 ![Cobertura de Errores Tipográficos en Remoto](./img/gh_lint.png)
 
+- Revisión de Pruebas en GitHub Actions
+
+![Ejecución de Pruebas en Workflow](./img/gh_tests.png)
+
 # CD (despliegue a Firebase con página estática)
 
 ![Comando de Inicialización de Proyecto en Firebase](./img/firebase_init_hosting.png)
