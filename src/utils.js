@@ -32,5 +32,5 @@ function percentile(p, values) {
 
 module.exports = {
   calcWeightedGrade,
-  percentile
-}
+  percentile,
+};
