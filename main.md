@@ -4,13 +4,14 @@ nrc: 27854
 assignment: Pruebas de Software
 filetype: pdf
 template: informe
+filename: 27854_P3_Examen_SosaMateo
 ---
 
 # CI (lógica + pruebas sobre funciones)
 
 ## Funciones obligatorias (en src/utils/)
 
-1. calcWeightedGrade(items)
+1. **calcWeightedGrade(items)**
 
 Calcula una nota final ponderada a partir de componentes con peso.
 
@@ -21,7 +22,7 @@ Calcula una nota final ponderada a partir de componentes con peso.
 
 ![Función de Cálculo por Peso de Notas](./img/func_calcWeightedGrade.png)
 
-2. percentile(p, values) — método nearest-rank
+2. **percentile(p, values)**
 
 Devuelve el percentil p de una lista de números usando el método de rango más cercano (sin interpolación).
 
@@ -38,10 +39,14 @@ Devuelve el percentil p de una lista de números usando el método de rango más
 
 ![Prueba para la Función _calcWeightedGrade_](./img/test_calcWG.png)
 
+![Ejecución de Prueba _calcWeightedGrade_](./img/exec_calcWG.png)
+
 - percentile(0,[1,2,3]) → 1.00 ; percentile(100,[1,2,3]) → 3.00
 - percentile(50,[1,2,3,4]) → 2.00 (nearest-rank)
 
 ![Pruebas para la Función _percentile_](./img/test_percentile.png)
+
+![Ejecución de Prueba _percentile_](./img/exec_percentile.png)
 
 ## Criterios de aceptación CI (NRC B)
 
@@ -74,4 +79,11 @@ Página requerida
 ## Criterios de aceptación CD
 
 - Preview visible en el PR (URL única del preview).
+
+![Página Web Hosteada en Firebase](./img/firebase_web_page.png)
+
+El link de acceso es: [https://examen-p3-879e0.firebaseapp.com/](https://examen-p3-879e0.firebaseapp.com/)
+
 - Live al hacer merge a main (condicionado a CI verde).
+
+![Comprobación de Workflows Correctos en GitHub Actions](./img/gh_firebase_push.png)
