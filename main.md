@@ -1,3 +1,11 @@
+---
+author: Mateo Sosa
+nrc: 27854
+assignment: Pruebas de Software
+filetype: pdf
+template: informe
+---
+
 # CI (lógica + pruebas sobre funciones)
 
 ## Funciones obligatorias (en src/utils/)
@@ -17,7 +25,7 @@ Calcula una nota final ponderada a partir de componentes con peso.
 
 Devuelve el percentil p de una lista de números usando el método de rango más cercano (sin interpolación).
 
-- p en [0,100]; values: arreglo de números, longitud ≥ 1.
+- p en [0,100]; values: arreglo de números, longitud >= 1.
 - Ordena ascendentemente; rank = ceil(p/100 × N) con indexación 1..N.
 - Regla explícita para bordes: si p = 0 → devuelve mínimo; si p = 100 → máximo.
 - Resultado con 2 decimales; validar tipos/rangos; lanzar errores apropiados.
@@ -37,12 +45,21 @@ Devuelve el percentil p de una lista de números usando el método de rango más
 
 ## Criterios de aceptación CI (NRC B)
 
+![Configuración de ESLint](./img/config_eslint.png)
+
 - CI corre en push/PR a main.
+
+![Ejecución de CI en GitHub Actions](./img/gh_actions.png)
+
 - Lint sin errores.
-- Cobertura mínima ≥ 85% (líneas y ramas).
-- PR bloqueado si CI o auditoría fallan.
+
+![Cobertura de Errores Tipográficos en Local](./img/console_lint.png)
+
+![Cobertura de Errores Tipográficos en Remoto](./img/gh_lint.png)
 
 # CD (despliegue a Firebase con página estática)
+
+![Comando de Inicialización de Proyecto en Firebase](./img/firebase_init_hosting.png)
 
 Página requerida
 
